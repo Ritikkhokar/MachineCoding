@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MachineCoding.iml" filepath="$PROJECT_DIR$/MachineCoding.iml" />
       <module fileurl="file://$PROJECT_DIR$/MachineCoding2ParkingLot/MachineCoding2ParkingLot.iml" filepath="$PROJECT_DIR$/MachineCoding2ParkingLot/MachineCoding2ParkingLot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StrategyDesignPattern/StrategyDesignPattern.iml" filepath="$PROJECT_DIR$/StrategyDesignPattern/StrategyDesignPattern.iml" />
     </modules>
   </component>
 </project>
