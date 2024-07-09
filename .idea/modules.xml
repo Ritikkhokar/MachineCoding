@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DecoratoDesignPattern/DecoratoDesignPattern.iml" filepath="$PROJECT_DIR$/DecoratoDesignPattern/DecoratoDesignPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FactoryDesignPattern/FactoryDesignPattern.iml" filepath="$PROJECT_DIR$/FactoryDesignPattern/FactoryDesignPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/MachineCoding.iml" filepath="$PROJECT_DIR$/MachineCoding.iml" />
       <module fileurl="file://$PROJECT_DIR$/MachineCoding2ParkingLot/MachineCoding2ParkingLot.iml" filepath="$PROJECT_DIR$/MachineCoding2ParkingLot/MachineCoding2ParkingLot.iml" />
       <module fileurl="file://$PROJECT_DIR$/ObserverDesignPattern/ObserverDesignPattern.iml" filepath="$PROJECT_DIR$/ObserverDesignPattern/ObserverDesignPattern.iml" />
