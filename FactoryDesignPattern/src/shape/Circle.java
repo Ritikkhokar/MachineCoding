@@ -3,6 +3,6 @@ package shape;
 public class Circle implements Shape {
     @Override
     public void draw() {
-        System.out.println("shape.Circle is drawn");
+        System.out.println("Circle is drawn");
     }
 }

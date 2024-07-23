@@ -8,6 +8,8 @@
       <module fileurl="file://$PROJECT_DIR$/MachineCoding2ParkingLot/MachineCoding2ParkingLot.iml" filepath="$PROJECT_DIR$/MachineCoding2ParkingLot/MachineCoding2ParkingLot.iml" />
       <module fileurl="file://$PROJECT_DIR$/ObserverDesignPattern/ObserverDesignPattern.iml" filepath="$PROJECT_DIR$/ObserverDesignPattern/ObserverDesignPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/StrategyDesignPattern/StrategyDesignPattern.iml" filepath="$PROJECT_DIR$/StrategyDesignPattern/StrategyDesignPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Test/Test.iml" filepath="$PROJECT_DIR$/Test/Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TicTacToe/TicTacToe.iml" filepath="$PROJECT_DIR$/TicTacToe/TicTacToe.iml" />
     </modules>
   </component>
 </project>

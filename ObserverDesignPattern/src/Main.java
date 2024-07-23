@@ -12,28 +12,6 @@ public class Main {
 
 
 
-    static class Edge{
-        int src;
-        int dest;
-        int weight;
-
-        Edge(int src, int dest, int weight){
-            this.src = src;
-            this.dest = dest;
-            this.weight = weight;
-        }
-    }
-
-    static class PathInfo{
-        int shortestPathLength;
-        int frequency;
-
-        PathInfo(int shortestPathLength, int frequency){
-            this.shortestPathLength = shortestPathLength;
-            this.frequency = frequency;
-        }
-    }
-
     public static void main(String[] args) {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
@@ -44,14 +22,17 @@ public class Main {
         Observers observer2 = new MobileObserver(new WeatherOfOhio(), "Karan");
         Observers observer3 = new EmailObserver(new WeatherOfTexas(), "Sanju");
 
-        WeatherOfOhio.ohioObserverList.add(observer1);
-        WeatherOfOhio.ohioObserverList.add(observer2);
-        WeatherOfTexas.texasObserverList.add(observer3);
+//        WeatherOfOhio.ohioObserverList.add(observer1);
+//        WeatherOfOhio.ohioObserverList.add(observer2);
+//        WeatherOfTexas.texasObserverList.add(observer3);
 
         WeatherOfOhio weatherOfOhio = new WeatherOfOhio();
+        weatherOfOhio.addObserver(observer1);
+        weatherOfOhio.addObserver(observer2);
         weatherOfOhio.notifyObserver("weather of is very good");
 
         WeatherOfTexas weatherOfTexas = new WeatherOfTexas();
+        weatherOfTexas.addObserver(observer3);
         weatherOfTexas.notifyObserver("weather of texas is very good");
 
 
