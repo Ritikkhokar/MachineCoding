@@ -1,9 +1,11 @@
 package MachineCoding.BuildTicTacToe;
 
+import java.util.Scanner;
+
 public class Game {
     Player player1;
     Player player2;
-    Board board;
+    TicTacToeBoard board;
     Player winner;
     Player currentPlayer;
     GameState gameState;
@@ -18,7 +20,7 @@ public class Game {
 
 
     public void makeMove(Player currentPlayer, int posx, int posy){
-        board.fillBoard(currentPlayer.symbol, posx, posy);
+        board.board[posx-1][posy-1] = currentPlayer.getSymbol();
     }
 
     public GameState startGame() {
@@ -56,5 +58,7 @@ public class Game {
             currentPlayer = currentPlayer == player1 ? player2 : player1;
         }
 
+
+    }
 
 }

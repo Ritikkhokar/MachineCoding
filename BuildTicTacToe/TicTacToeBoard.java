@@ -1,9 +1,9 @@
 package MachineCoding.BuildTicTacToe;
 
-public class Board {
+public class TicTacToeBoard {
     char[][] board;
 
-    public Board() {
+    public TicTacToeBoard() {
         board = new char[3][3];
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
@@ -38,10 +38,6 @@ public class Board {
             return true;
         }
         return false;
-    }
-
-    public static void fillBoard(char symbol, int x, int y){
-        board[x][y] = symbol;
     }
 
 }
