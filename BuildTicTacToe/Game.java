@@ -9,6 +9,7 @@ public class Game {
     Player winner;
     Player currentPlayer;
     GameState gameState;
+    Scanner scn;
 
     public Game(Player player1, Player player2) {
         this.player1 = player1;
@@ -16,7 +17,7 @@ public class Game {
         this.board = new TicTacToeBoard();
         this.currentPlayer = player1;
         this.gameState = GameState.PLAYING;
-        Scanner scn = new Scanner(System.in);
+        this.scn = new Scanner(System.in);
     }
 
 
@@ -36,6 +37,7 @@ public class Game {
             // check for valid move
             if(!board.isValidMove(posx, posy)){
                 System.out.println("Please give correct position ");
+                continue;
             }
 
             // make move by curent player
@@ -45,7 +47,7 @@ public class Game {
             if(board.checkWin(currentPlayer.getSymbol())){
             gameState = GameState.WON;
             winner = currentPlayer;
-            System.out.println("Game Won by Player " + currentPlayer.name)
+            System.out.println("Game Won by Player " + currentPlayer.name);
             return GameState.WON;
             }
 
@@ -58,6 +60,7 @@ public class Game {
             // change player for next turn
             currentPlayer = currentPlayer == player1 ? player2 : player1;
         }
+        return gameState;
 
 
     }
