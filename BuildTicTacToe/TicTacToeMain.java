@@ -1,4 +1,5 @@
-package MachineCoding.BuildTicTacToe;
+import MachineCoding.BuildTicTacToe.Game;
+import MachineCoding.BuildTicTacToe.Player;
 
 public class TicTacToeMain {
     public static void main(String[] args) {
@@ -9,3 +10,4 @@ public class TicTacToeMain {
 
     }
 }
+

@@ -13,9 +13,10 @@ public class Game {
     public Game(Player player1, Player player2) {
         this.player1 = player1;
         this.player2 = player2;
-        this.board = new Board();
+        this.board = new TicTacToeBoard();
         this.currentPlayer = player1;
         this.gameState = GameState.PLAYING;
+        Scanner scn = new Scanner(System.in);
     }
 
 
@@ -24,7 +25,7 @@ public class Game {
     }
 
     public GameState startGame() {
-        Scanner scn = new Scanner();
+        
         while(GameState.PLAYING == gameState) {
 
             System.out.println("Please give position X for player " + currentPlayer.name);

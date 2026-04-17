@@ -16,6 +16,17 @@ public class TicTacToeBoard {
         if(x>3 || x<1 || y>3 || y<1 )return false;
         return board[x-1][y] == '-';
     }
+
+    public boolean isBoardFull() {
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                if (board[i][j] == '-') {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
     
     public boolean checkWin(char symbol){
         // rows check
