@@ -14,7 +14,7 @@ public class TicTacToeBoard {
 
     public boolean isValidMove(int x, int y) {
         if(x>3 || x<1 || y>3 || y<1 )return false;
-        return board[x-1][y] == '-';
+        return board[x-1][y-1] == '-';
     }
 
     public boolean isBoardFull() {
