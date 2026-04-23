@@ -51,4 +51,8 @@ public class TicTacToeBoard {
         return false;
     }
 
+    public void placePosition(int x, int y, char symbol) {
+        board[x][y] = symbol;
+    }
+
 }

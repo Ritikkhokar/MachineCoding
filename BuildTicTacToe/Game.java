@@ -22,7 +22,8 @@ public class Game {
 
 
     public void makeMove(Player currentPlayer, int posx, int posy){
-        board.board[posx-1][posy-1] = currentPlayer.getSymbol();
+
+        board.placePosition(posx-1, posy-1, currentPlayer.getSymbol());
     }
 
     public GameState startGame() {
