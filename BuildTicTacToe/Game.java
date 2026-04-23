@@ -20,50 +20,42 @@ public class Game {
         this.scn = new Scanner(System.in);
     }
 
-
-    public void makeMove(Player currentPlayer, int posx, int posy){
-
-        board.placePosition(posx-1, posy-1, currentPlayer.getSymbol());
+    public getGameState() {
+        return gameState;
     }
 
-    public GameState startGame() {
-        
-        while(GameState.PLAYING == gameState) {
-
-            System.out.println("Please give position X for player " + currentPlayer.name);
-            int posx = scn.nextInt();
-            System.out.println("Please give position Y for player " + currentPlayer.name);
-            int posy = scn.nextInt();
-
-            // check for valid move
-            if(!board.isValidMove(posx, posy)){
+    public void makeMove(Player currentPlayer, int posx, int posy){
+        if(!board.isValidMove(posx, posy)){
                 System.out.println("Please give correct position ");
-                continue;
-            }
+                return;
+        }
 
-            // make move by curent player
-            makeMove(currentPlayer, posx, posy);
+        board.placePosition(posx-1, posy-1, currentPlayer.getSymbol());
 
-            // check is he win
-            if(board.checkWin(currentPlayer.getSymbol())){
+         // check is he win
+        if(board.checkWin(currentPlayer.getSymbol())){
             gameState = GameState.WON;
             winner = currentPlayer;
             System.out.println("Game Won by Player " + currentPlayer.name);
-            return GameState.WON;
-            }
-
-            // check is board full
-            if(board.isBoardFull()){
-                System.out.println("Game Drawn");
-                return GameState.DRAW;
-            }
-            
-            // change player for next turn
-            currentPlayer = currentPlayer == player1 ? player2 : player1;
+            return;
         }
-        return gameState;
 
+        if(board.isBoardFull()){
+                System.out.println("Game Drawn");
+                gameState = GameState.DRAW;
+                return;
+        }
 
+            // change player for next turn
+        currentPlayer = currentPlayer == player1 ? player2 : player1;
+        return;
     }
+    
+    public Player getCurrentPlayer() {
+        return currentPlayer;
+    }
+
+
+
 
 }
