@@ -3,12 +3,12 @@ package MachineCoding.BuildTicTacToe;
 import java.util.Scanner;
 
 public class Game {
-    Player player1;
-    Player player2;
-    TicTacToeBoard board;
-    Player winner;
-    Player currentPlayer;
-    GameState gameState;
+    private Player player1;
+    private Player player2;
+    private TicTacToeBoard board;
+    private Player winner;
+    private Player currentPlayer;
+    private GameState gameState;
 
     public Game(Player player1, Player player2) {
         this.player1 = player1;

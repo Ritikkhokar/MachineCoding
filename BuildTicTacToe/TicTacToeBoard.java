@@ -1,7 +1,7 @@
 package MachineCoding.BuildTicTacToe;
 
 public class TicTacToeBoard {
-    char[][] board;
+    private char[][] board;
 
     public TicTacToeBoard() {
         board = new char[3][3];
