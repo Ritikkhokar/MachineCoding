@@ -1,4 +1,3 @@
-package MachineCoding.BuildTicTacToe;
 
 import java.util.Scanner;
 
@@ -28,7 +27,7 @@ public class Game {
 
 
 
-    public void makeMove(Player currentPlayer, int posx, int posy){
+    public void makeMove(int posx, int posy){
         if(!board.isValidMove(posx, posy)){
                 System.out.println("Please give correct position ");
                 return;
@@ -40,7 +39,7 @@ public class Game {
         if(board.checkWin(currentPlayer.getSymbol())){
             gameState = GameState.WON;
             winner = currentPlayer;
-            System.out.println("Game Won by Player " + currentPlayer.name);
+            System.out.println("Game Won by Player " + currentPlayer.getName());
             return;
         }
 

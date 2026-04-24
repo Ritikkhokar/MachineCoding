@@ -1,4 +1,3 @@
-package MachineCoding.BuildTicTacToe;
 
 public class TicTacToeBoard {
     private char[][] board;

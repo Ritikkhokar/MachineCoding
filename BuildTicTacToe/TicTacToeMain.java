@@ -1,9 +1,5 @@
 import java.util.Scanner;
 
-import MachineCoding.BuildTicTacToe.Game;
-import MachineCoding.BuildTicTacToe.GameState;
-import MachineCoding.BuildTicTacToe.Player;
-
 public class TicTacToeMain {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
@@ -17,7 +13,7 @@ public class TicTacToeMain {
             int posx = scn.nextInt();
             System.out.println("Please give position Y for player " + currentPlayer.getName());
             int posy = scn.nextInt();
-            game.makeMove(currentPlayer, posx, posy);
+            game.makeMove(posx, posy);
 
         }
 

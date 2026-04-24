@@ -1,4 +1,3 @@
-package MachineCoding.BuildTicTacToe;
 
 public class Player {
     private String name;
