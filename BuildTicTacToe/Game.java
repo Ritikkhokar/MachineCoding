@@ -9,7 +9,6 @@ public class Game {
     Player winner;
     Player currentPlayer;
     GameState gameState;
-    Scanner scn;
 
     public Game(Player player1, Player player2) {
         this.player1 = player1;
@@ -17,7 +16,6 @@ public class Game {
         this.board = new TicTacToeBoard();
         this.currentPlayer = player1;
         this.gameState = GameState.PLAYING;
-        this.scn = new Scanner(System.in);
     }
 
     public getGameState() {
@@ -55,7 +53,14 @@ public class Game {
         return currentPlayer;
     }
 
-
+    
+    // In Game
+    public void reset() {
+    this.board = new TicTacToeBoard();
+    this.currentPlayer = player1;
+    this.gameState = GameState.PLAYING;
+    this.winner = null;
+    }
 
 
 }
