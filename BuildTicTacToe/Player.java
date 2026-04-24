@@ -1,8 +1,8 @@
 package MachineCoding.BuildTicTacToe;
 
 public class Player {
-    String name;
-    char symbol;
+    private String name;
+    private char symbol;
 
     public Player(String name, char symbol) {
         this.name = name;
