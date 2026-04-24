@@ -18,9 +18,15 @@ public class Game {
         this.gameState = GameState.PLAYING;
     }
 
-    public getGameState() {
+    public GameStategetGameState() {
         return gameState;
     }
+
+    public Player getWinner() {
+    return winner;
+    }
+
+
 
     public void makeMove(Player currentPlayer, int posx, int posy){
         if(!board.isValidMove(posx, posy)){

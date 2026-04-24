@@ -1,9 +1,12 @@
+import java.util.Scanner;
+
 import MachineCoding.BuildTicTacToe.Game;
 import MachineCoding.BuildTicTacToe.GameState;
 import MachineCoding.BuildTicTacToe.Player;
 
 public class TicTacToeMain {
     public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
         Player player1 = new Player("Player1", 'X');
         Player player2 = new Player("Player2", 'O');
         Game game = new Game(player1, player2);
