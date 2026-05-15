@@ -22,5 +22,26 @@ public class ConnectFourGame {
         return gameState;
     }
 
+    public void makeMove(int col){
+        if(board.isValidMove(col)) {
+                board.makeMove(col, currentPlayer.symbol);
+                if(board.checkWin(currentPlayer.symbol)){
+                    gameState = GameState.WON;
+                    System.out.println(currentPlayer.name + " wins!");
+                    return;
+                } else if(board.isBoardFull()){
+                    gameState = GameState.DRAW;
+                    System.out.println("It's a draw!");
+                    return;
+                } else {
+                    // Switch player
+                    currentPlayer = (currentPlayer == player1) ? player2 : player1;
+                }
+            } else {
+                System.out.println("Invalid move, try again.");
+                return;
+            }
+    }
+
 
 }

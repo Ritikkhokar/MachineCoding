@@ -13,18 +13,8 @@ public class ConnectFourMain {
             Player currentPlayer = game.getCurrentPlayer();
             System.out.println("Please choose the column for " + currentPlayer.name);
             int col = scn.nextInt();
-            if(game.board.isValidMove(col)) {
-                game.board.makeMove(col, currentPlayer.symbol);
-
-                // Check for win/draw
-            } else {
-                System.out.println("Invalid move, try again.");
-                continue;
-            }
-            // Get input from user for column number
-            // Validate the move
-            // Update the board
-            // Check for win/draw
+            game.makeMove(col);
+            
         }
     }
 }

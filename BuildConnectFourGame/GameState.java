@@ -1,5 +1,7 @@
 package MachineCoding.BuildConnectFourGame;
 
-public class GameState {
-
+public enum GameState {
+    PLAYING,
+    WON,
+    DRAW
 }
