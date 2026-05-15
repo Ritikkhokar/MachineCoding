@@ -18,7 +18,18 @@ public class ConnectFourBoard {
         return true;
     }
 
+    public boolean makeMove(int col, char symbol){
+        for(int i=5;i>=0;i--){
+            if(board[i][col-1] == '-'){
+                board[i][col-1] = symbol;
+                return true;
+            }
+        }
+        return false;
+    }
     
+
+
 
 
         
